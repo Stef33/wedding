@@ -1,0 +1,4 @@
+wedding_project:
+    resource: "@WeddingProjectBundle/Resources/config/routing.yml"
+    prefix:   /
+

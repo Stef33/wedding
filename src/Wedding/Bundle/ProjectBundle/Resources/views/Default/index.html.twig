@@ -1,0 +1,20 @@
+{% extends "WeddingProjectBundle::layout.html.twig" %}
+
+{% block body %}
+    {% block image %}
+        <div id=image>
+            <ul>
+                <li>
+                    <a href="{{ path('wedding_project_announcement') }}" id="alliances">alliances</a>
+                </li>
+            </ul>
+        </div>
+    {% endblock %}
+
+    {% block text %}
+        <div id="presentation">
+            <p>Un jour spécial dans votre vie</p>
+        </div>
+    {% endblock %}
+
+{% endblock %}

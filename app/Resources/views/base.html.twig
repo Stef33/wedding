@@ -1,0 +1,29 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>{% block title %}Votre Mariage{% endblock %}</title>
+
+    {% block stylesheets %}
+        <link rel="stylesheet" href="{{ asset('bundles/weddingproject/css/style.css') }}" type="text/css" />
+    {% endblock %}
+    {% block javascript %}
+
+    {% endblock %}
+</head>
+<body>
+<div id="menu">
+    <ul>
+        <li><a href="{{ path('wedding_project_homepage') }}">Accueil</a></li>
+        <li><a href="{{ path('wedding_project_announcement') }}">Faire-part</a></li>
+        <li><a href="{{ path('wedding_project_map') }}">Plan</a></li>
+        <li><a href="{{ path('wedding_project_contact') }}">Contact</a></li>
+    </ul>
+</div>
+{% block body %}
+    <div class="container">
+        {{ include('WeddingProjectBundle:views:layout.html.twig') }}
+    </div>
+{% endblock %}
+</body>
+</html>

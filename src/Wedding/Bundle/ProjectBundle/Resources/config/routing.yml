@@ -1,0 +1,21 @@
+wedding_project_homepage:
+    pattern:  /
+    defaults: { _controller: WeddingProjectBundle:Default:index }
+
+wedding_project_announcement:
+    pattern:  /announcement
+    defaults: { _controller: WeddingProjectBundle:Default:announcement }
+
+wedding_project_map:
+    pattern:  /map
+    defaults: { _controller: WeddingProjectBundle:Default:map }
+
+wedding_project_contact:
+    pattern:  /contact
+    defaults: { _controller: WeddingProjectBundle:Default:contact }
+    requirements:
+        _method: GET
+
+wedding_project_sendMail:
+    pattern:  /sendMail
+    defaults: { _controller: WeddingProjectBundle:Default:sendMail }
