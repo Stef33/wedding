@@ -64,15 +64,16 @@ body
     color: #696969;
     display: block;
     background:url("../images/rose.png") no-repeat scroll center center transparent;
-    height: 840px;
-    width: 1240px;
-    margin-left: auto;
-    margin-right: auto;
+    height: 450px;
+    width: 990px;
+    margin: auto;
 }
 
-#announcement p
+#announcement #text
 {
     text-align: center;
+    margin: auto;
+    padding-top: 205px;
 }
 
 #date
@@ -80,38 +81,45 @@ body
     padding-top: 80px;
 }
 
-#map
+#container
 {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+    position:relative;
+    width:990px;
+    margin:auto;
 }
 
-#map iframe
+#container #map
 {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+    width:500px;
+    height:500px;
+    margin:auto;
 }
 
-#itineraire
+#destinationForm #direction
 {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+    position:relative;
+    width:800px;
+    margin:auto;
+    padding-bottom: 20px;
     padding-top: 20px;
 }
 
-#itineraire p
+#destinationForm #direction input
 {
-    text-align: center;
-    font: HelveticaNeue-light;
+    font-family: HelveticaNeue-light;
+}
+
+#panel
+{
+    font-family: HelveticaNeue-light;
 }
 
 #contact
 {
     display: block;
-    padding-left: 525px ;
+    position:relative;
+    width: 200px;
+    margin: auto;
 
 }
 
